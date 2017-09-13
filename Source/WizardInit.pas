@@ -12,15 +12,19 @@ function InitWizard(const BorlandIDEServices: IBorlandIDEServices;
 implementation
 
 uses
-  WizardImpl;
+  WizardImpl, Forms, SysUtils;
 
 function InitWizard(const BorlandIDEServices: IBorlandIDEServices;
     RegisterProc: TWizardRegisterProc;
     var Terminate: TWizardTerminateProc): Boolean; stdcall;
-var  WizardServices: IOTAWizardServices;
+var
+  Services: IOTAServices;
 begin
   if ToolsApi.BorlandIDEServices = nil then
      ToolsApi.BorlandIDEServices := BorlandIDEServices;
+
+  if Supports(BorlandIDEServices, IOTAServices, Services) then
+    Application.Handle := Services.GetParentHandle;
 
   Result := RegisterProc(TSimpleMenuExpert.Create);
 end;

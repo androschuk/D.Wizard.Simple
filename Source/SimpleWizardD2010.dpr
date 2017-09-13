@@ -11,6 +11,7 @@ library SimpleWizardD2010;
   using PChar or ShortString parameters. }
 
 uses
+  ShareMem,
   SysUtils,
   Classes,
   WizardInit in 'WizardInit.pas',
