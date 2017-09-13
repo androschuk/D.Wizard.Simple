@@ -1,1 +1,1 @@
-REG ADD HKEY_CURRENT_USER\SOFTWARE\CodeGear\BDS\7.0\Experts /f /v SimpleExpert /t REG_EXPAND_SZ /d %~dp0\SimpleWizard.dll
+REG ADD HKEY_CURRENT_USER\SOFTWARE\CodeGear\BDS\7.0\Experts /f /v SimpleExpert /t REG_EXPAND_SZ /d %~dp0\SimpleWizardD2010.dll

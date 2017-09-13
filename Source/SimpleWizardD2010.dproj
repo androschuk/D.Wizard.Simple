@@ -2,7 +2,7 @@
 		<PropertyGroup>
 			<ProjectGuid>{8B7A03B3-85BA-4FC7-BBA3-F22F3B596B17}</ProjectGuid>
 			<ProjectVersion>12.0</ProjectVersion>
-			<MainSource>SimpleWizard.dpr</MainSource>
+			<MainSource>SimpleWizardD2010.dpr</MainSource>
 			<Config Condition="'$(Config)'==''">Debug</Config>
 			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
 		</PropertyGroup>
@@ -24,7 +24,7 @@
 			<DCC_ExeOutput>..\BIN\</DCC_ExeOutput>
 			<DCC_UsePackage>vclx;vcl;designide</DCC_UsePackage>
 			<UsePackages>true</UsePackages>
-			<DCC_DependencyCheckOutputName>..\BIN\SimpleWizard.dll</DCC_DependencyCheckOutputName>
+			<DCC_DependencyCheckOutputName>..\BIN\SimpleWizardD2010.dll</DCC_DependencyCheckOutputName>
 			<DCC_ImageBase>00400000</DCC_ImageBase>
 			<DCC_AdditionalSwitches>-LUDesignIDE</DCC_AdditionalSwitches>
 			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
@@ -47,7 +47,7 @@
 			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
 		</PropertyGroup>
 		<ItemGroup>
-			<DelphiCompile Include="SimpleWizard.dpr">
+			<DelphiCompile Include="SimpleWizardD2010.dpr">
 				<MainSource>MainSource</MainSource>
 			</DelphiCompile>
 			<DCCReference Include="WizardInit.pas"/>
@@ -71,7 +71,7 @@
 			<BorlandProject>
 				<Delphi.Personality>
 					<Source>
-						<Source Name="MainSource">SimpleWizard.dpr</Source>
+						<Source Name="MainSource">SimpleWizardD2010.dpr</Source>
 					</Source>
 					<Parameters>
 						<Parameters Name="UseLauncher">False</Parameters>

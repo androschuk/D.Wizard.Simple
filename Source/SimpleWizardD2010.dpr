@@ -1,4 +1,4 @@
-library SimpleWizard;
+library SimpleWizardD2010;
 
 { Important note about DLL memory management: ShareMem must be the
   first unit in your library's USES clause AND your project's (select
